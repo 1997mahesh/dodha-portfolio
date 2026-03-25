@@ -28,6 +28,6 @@ body {
 
 @media (max-width: 768px) {
   .timeline-line {
-    left: 20px;
+    display: none;
   }
 }
