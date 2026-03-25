@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap');
+
+@theme {
+  --font-sans: "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
+  --color-warm-orange: #ff9d5c;
+  --color-cream: #fff9f0;
+  --color-soft-brown: #6d4c41;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-soft-brown);
+}
+
+.timeline-line {
+  width: 2px;
+  background: var(--color-warm-orange);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+}
